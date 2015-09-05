@@ -66,6 +66,16 @@ p {
     background-color: #fb0001;
 }
 
+.small-view {
+    font-size: 12px;
+}
+
+@media(min-width: 768px) {
+    .small-view {
+        font-size: 20px;
+    }
+}
+
 .bg-dark {
     color: #fff;
     background-color: #222;
@@ -90,7 +100,7 @@ aside {
 .navbar-default {
     border-color: rgba(34,34,34,.05);
     font-family: gearus,Helvetica,sans-serif;
-    background-color: #fb0001;
+    background-color: rgba(251,0,1,1);
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
@@ -115,7 +125,7 @@ aside {
     text-transform: uppercase;
     font-size: 13px;
     font-weight: 700;
-    color: #222;
+    color: #f2f2f2;
 }
 
 .navbar-default .nav > li>a:hover,
@@ -126,22 +136,22 @@ aside {
 .navbar-default .nav > li.active>a,
 .navbar-default .nav>li.active>a:focus {
     color: #fb0001!important;
-    background-color: transparent;
+    background-color: #fb0001;
 }
 
 .navbar-default .nav > li.active>a:hover,
 .navbar-default .nav>li.active>a:focus:hover {
-    background-color: transparent;
+    background-color: #fb0001;
 }
 
 @media(min-width:768px) {
     .navbar-default {
         border-color: rgba(255,255,255,.3);
-        background-color: transparent;
+        background-color: #fb0001;
     }
 
     .navbar-default .navbar-header .navbar-brand {
-        color: rgba(255,255,255,.7);
+        color: rgba(255,255,255,1);
         font-size: 50px;
     }
 
@@ -162,7 +172,7 @@ aside {
 
     .navbar-default.affix {
         border-color: rgba(34,34,34,.05);
-        background-color: #fb0001;
+        background-color: rgba(251,0,1,.3);
     }
 
     .navbar-default.affix .navbar-header .navbar-brand {
@@ -215,6 +225,14 @@ section .bottom-content .bottom-content-inner h4 {
     text-align: center;
 }
 
+section .bottom-content .bottom-content-inner h3 {
+    position: relative;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #fb0001;
+    text-align: center;
+}
+
 section .bottom-content .bottom-content-inner p {
     margin-bottom: 50px;
     font-size: 10px;
@@ -260,6 +278,15 @@ section .bottom-content .bottom-content-inner img {
         text-align: center;
     }
 
+    section .bottom-content .bottom-content-inner h3 {
+        position: relative;
+        margin-top: 500px;
+        margin-bottom: 60px;
+        color: #fb0001;
+        font-size: 24px;
+        text-align: center;
+    }
+
     section .bottom-content .bottom-content-inner img {
         width: 5%;
         height: auto;
@@ -270,7 +297,7 @@ section .bottom-content .bottom-content-inner img {
 header {
     position: relative;
     width: 100%;
-    min-height: auto;
+    min-height: 600px;
     text-align: center;
     color: #fff;
     background-image: url(../img/header.jpg);
@@ -307,9 +334,11 @@ header .header-content .header-content-inner p {
 }
 
 header .header-content .header-content-inner img {
-    width: 40%;
+    position:absolute; 
+    margin-top: 10%; 
+    margin-left: -20%; 
+    width: 40%; 
     height: auto;
-    margin: 0 auto;
 }
 
 @media(min-width:768px) {
@@ -338,11 +367,13 @@ header .header-content .header-content-inner img {
         max-width: 80%;
         font-size: 18px;
     }
-
+/*The following position has been made necessary due to the phone assembly requested by the client*/
     header .header-content .header-content-inner img {
-        width: 27%;
-        height: auto;
-        margin: 0 auto;
+       position:absolute; 
+       margin-top: -20%; 
+       margin-left: -10%; 
+       width: 19%; 
+       height: auto; 
     }
 }
 

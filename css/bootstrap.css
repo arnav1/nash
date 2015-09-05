@@ -2561,6 +2561,21 @@ output {
 .form-control::-webkit-input-placeholder {
   color: #fc6666;
 }
+@media(max-height: 768px) {
+  .form-control::-moz-placeholder {
+    color: #fc6666;
+    opacity: 1;
+    font-size: 8px;
+  }
+  .form-control:-ms-input-placeholder {
+    color: #fc6666;
+    font-size: 8px;
+  }
+  .form-control::-webkit-input-placeholder {
+    font-size: 8px;
+    color: #fc6666;
+  }
+}
 .form-control[disabled],
 .form-control[readonly],
 fieldset[disabled] .form-control {

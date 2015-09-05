@@ -17,6 +17,7 @@
     });
 
     // Highlight the top nav as scrolling occurs
+    /*This section is not needed in this build of the website*/
     $('body').scrollspy({
         target: '.navbar-fixed-top',
         offset: 51
@@ -38,7 +39,7 @@
     // Offset for Main Navigation
     $('#mainNav').affix({
         offset: {
-            top: -10
+            top: 100
         }
     })
 
